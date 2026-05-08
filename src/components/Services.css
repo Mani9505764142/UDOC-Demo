@@ -1,0 +1,40 @@
+.services {
+  background-color: var(--color-bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.service-card {
+  background: var(--color-bg-card);
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.service-icon {
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.service-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.service-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

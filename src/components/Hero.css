@@ -1,0 +1,68 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--color-bg);
+  padding-top: 80px;
+}
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-content::before {
+  content: 'Premium Overseas Education';
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background-color: rgba(212, 175, 55, 0.05);
+  color: var(--color-primary);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.hero-title span {
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+.hero-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  max-width: 400px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
